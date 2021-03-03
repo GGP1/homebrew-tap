@@ -5,25 +5,25 @@
 class Kure < Formula
   desc "CLI password manager"
   homepage "https://github.com/GGP1/kure"
-  version "0.1.0"
+  version "0.2.1"
   license "Apache 2.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/GGP1/kure/releases/download/v0.1.0/kure_v0.1.0_macOS_64bit.tar.gz"
-    sha256 "4fc0750a7b1c21fa5bf4fe8622ea7173bb193cdc1af9154aa3dfd2e348cc683b"
+    url "https://github.com/GGP1/kure/releases/download/v0.2.1/kure_v0.2.1_macOS_64bit.tar.gz"
+    sha256 "496979329bd15b7c506633c58df5c59b746d653e70b793898f5d95d865e6d41d"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/GGP1/kure/releases/download/v0.1.0/kure_v0.1.0_Linux_64bit.tar.gz"
-    sha256 "ce29c3bc5ce6c3baae9f81e3477ec28ee7ac409db898c3a280b9d035d5218121"
+    url "https://github.com/GGP1/kure/releases/download/v0.2.1/kure_v0.2.1_Linux_64bit.tar.gz"
+    sha256 "3e4179693f8544bd85c69785e11e2d4432ed4d7b8d7175b9cc96ce31fcdcf17b"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/GGP1/kure/releases/download/v0.1.0/kure_v0.1.0_Linux_ARMv6.tar.gz"
-    sha256 "dcd5a8675c340b1f5e5e1aa92cc29bcb3a84a701c8f73275d796ab3a7f8438b5"
+    url "https://github.com/GGP1/kure/releases/download/v0.2.1/kure_v0.2.1_Linux_ARMv6.tar.gz"
+    sha256 "bbe0f4242d92a8300899ccdf2a147a68cbc4f632095aed838738286c9811289d"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/GGP1/kure/releases/download/v0.1.0/kure_v0.1.0_Linux_ARM64.tar.gz"
-    sha256 "80f0e75e057cb9da2d39942bfd64cb43aba3a4bb48ce65aa29cae701c1224ba7"
+    url "https://github.com/GGP1/kure/releases/download/v0.2.1/kure_v0.2.1_Linux_ARM64.tar.gz"
+    sha256 "b7d7a027092bf8560d5d1046f6820f2b75081c80120e9db40459ec8f23d05a73"
   end
 
   def install
