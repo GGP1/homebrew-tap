@@ -5,29 +5,29 @@
 class Kure < Formula
   desc "Secure, private and feature-rich CLI password manager"
   homepage "https://github.com/GGP1/kure"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache 2.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/GGP1/kure/releases/download/v0.3.0/kure_v0.3.0_macOS_64bit.tar.gz"
-    sha256 "677c5d5992158abb2f7eb1a10169b2c49642edf63e56b7849863944618e2a97a"
+    url "https://github.com/GGP1/kure/releases/download/v0.4.0/kure_v0.4.0_macOS_64bit.tar.gz"
+    sha256 "df08afc50b0c58e960f95b0ee2fba98025cb6515ed73963e344318db4caca953"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/GGP1/kure/releases/download/v0.3.0/kure_v0.3.0_macOS_ARM64.tar.gz"
-    sha256 "342712d08668ca95c50decb3ace2efdf2777b6dfb1da7c32d8e111bcc9dbbdea"
+    url "https://github.com/GGP1/kure/releases/download/v0.4.0/kure_v0.4.0_macOS_ARM64.tar.gz"
+    sha256 "0e4bd59b667cbb02e5230dc11097ee494884184f65066b814c4dc0ea9a1fc1a7"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/GGP1/kure/releases/download/v0.3.0/kure_v0.3.0_Linux_64bit.tar.gz"
-    sha256 "f450c0dc363625d782eeba5270ac32965452b1439292e0ad1fd196dc9f5a07b6"
+    url "https://github.com/GGP1/kure/releases/download/v0.4.0/kure_v0.4.0_Linux_64bit.tar.gz"
+    sha256 "3fab9b0872b998eb45cadf09728871e000f888a3853e246085da2ffa2eade746"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/GGP1/kure/releases/download/v0.3.0/kure_v0.3.0_Linux_ARMv6.tar.gz"
-    sha256 "a16fce953c3b363cd00814b8e30642878055f21638450353ce65ac0106067839"
+    url "https://github.com/GGP1/kure/releases/download/v0.4.0/kure_v0.4.0_Linux_ARMv6.tar.gz"
+    sha256 "041fbbecab34e623d328a184a481fee0636128148e168503c223b1084c6d19ab"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/GGP1/kure/releases/download/v0.3.0/kure_v0.3.0_Linux_ARM64.tar.gz"
-    sha256 "c36d7eaa2d6d7ebcd7c2a201011b7a0d2d7721722d5626b1b87a2053a7b2798a"
+    url "https://github.com/GGP1/kure/releases/download/v0.4.0/kure_v0.4.0_Linux_ARM64.tar.gz"
+    sha256 "44db893810308666d726110493f9e0163e0fd13ac2d4bd64e1a8157c7eabbf29"
   end
 
   def install
