@@ -12,26 +12,26 @@ class Kure < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/GGP1/kure/releases/download/v0.4.3/kure_v0.4.3_macOS_64bit.tar.gz"
-      sha256 "877dc56c5ab16b73a644659149fa13b89422597356cbd03b7f300894cb2454a7"
+      sha256 "96d19d8dad2a7f881eecf5d17b551dc12fb88b7fed9ab23a9e3e2fe4b416ef1b"
     end
     if Hardware::CPU.arm?
       url "https://github.com/GGP1/kure/releases/download/v0.4.3/kure_v0.4.3_macOS_ARM64.tar.gz"
-      sha256 "ded575cbfa9fbc8b596f855185680391f277c0a307614887c75fd10d8883ec4d"
+      sha256 "4656227fe3b9f7d96e056c83b231fa4ef80303e464719b346c9258562967231d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/GGP1/kure/releases/download/v0.4.3/kure_v0.4.3_Linux_64bit.tar.gz"
-      sha256 "9008fd5f19414a4245e086fa5e1b4b5fea022b28ad0f38f56b0d01caac723b7f"
+      sha256 "bddb5d3b56e7324902d93f8dff5090732a5012d9862b816f02eae7696db1d6a9"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/GGP1/kure/releases/download/v0.4.3/kure_v0.4.3_Linux_ARMv6.tar.gz"
-      sha256 "dbe9c0ef38b92538d556fa3619dc9aac2729f5b5890c1ecd6f314e7fea0b0d33"
+      sha256 "50ecbe5bb716ba1a5e0330659baf11b8319bfabf6082a2e71d79c67939aed98e"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/GGP1/kure/releases/download/v0.4.3/kure_v0.4.3_Linux_ARM64.tar.gz"
-      sha256 "6065ee980a3c8c4209f53bc2bc9579247444cdc6ca3305e3d064e6cbc82c1b71"
+      sha256 "df2c4fdec63117bfdf3fdbcfba2b8a7e35d6b314b05123511ffffb5036cd3735"
     end
   end
 
