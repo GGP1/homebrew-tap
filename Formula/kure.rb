@@ -5,21 +5,21 @@
 class Kure < Formula
   desc "Cross-platform CLI password manager with sessions"
   homepage "https://github.com/GGP1/kure"
-  version "0.8.0"
+  version "0.9.0"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/GGP1/kure/releases/download/v0.8.0/kure_v0.8.0_macOS_64bit.tar.gz"
-      sha256 "b1e243a111644042bf06450711f7078a959025e8d8778a988f9e1d2182194daa"
+      url "https://github.com/GGP1/kure/releases/download/v0.9.0/kure_v0.9.0_macOS_64bit.tar.gz"
+      sha256 "4925a7159313fae348ad91032095fb469f1c372dd62981bdde68d28280ebecac"
 
       def install
         bin.install "kure"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/GGP1/kure/releases/download/v0.8.0/kure_v0.8.0_macOS_ARM64.tar.gz"
-      sha256 "4e4260f81e99e3335cbbe7e1678b7d6cf98025857e6ca038ea3151e004b22c9f"
+      url "https://github.com/GGP1/kure/releases/download/v0.9.0/kure_v0.9.0_macOS_ARM64.tar.gz"
+      sha256 "250ef99d3c867ed656f9c29f89d74a1004bd313f602528018e4b1eff205d2ef4"
 
       def install
         bin.install "kure"
@@ -29,24 +29,24 @@ class Kure < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GGP1/kure/releases/download/v0.8.0/kure_v0.8.0_Linux_ARM64.tar.gz"
-      sha256 "582cd90f98f7ad148718ba93092c57449ff15a0e9fa59b464539b21ad51de687"
-
-      def install
-        bin.install "kure"
-      end
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/GGP1/kure/releases/download/v0.8.0/kure_v0.8.0_Linux_64bit.tar.gz"
-      sha256 "1e8bb5dca9b50a5ee097ecb578e1fb763ebebc7932a2f98f082b2e2b352eae97"
+      url "https://github.com/GGP1/kure/releases/download/v0.9.0/kure_v0.9.0_Linux_ARM64.tar.gz"
+      sha256 "68e770d2403c26d64996051d082a04aada92c66b72eecd0345fa4fd857c6932c"
 
       def install
         bin.install "kure"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/GGP1/kure/releases/download/v0.8.0/kure_v0.8.0_Linux_ARMv6.tar.gz"
-      sha256 "850502ba5a4dcb854969fc7c63b580bf3b7b84556307582534d4f225c2e021b3"
+      url "https://github.com/GGP1/kure/releases/download/v0.9.0/kure_v0.9.0_Linux_ARMv6.tar.gz"
+      sha256 "1842efdc2ec873c31f058dfe2a15870719e4f11e3ece445808e72fdbbc914db8"
+
+      def install
+        bin.install "kure"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/GGP1/kure/releases/download/v0.9.0/kure_v0.9.0_Linux_64bit.tar.gz"
+      sha256 "8b3005e65d3d4fa1405d6774bb1209ac07c6b7e11504bc13665dca12e40e55d5"
 
       def install
         bin.install "kure"
